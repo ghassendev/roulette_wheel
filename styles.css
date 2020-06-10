@@ -1,0 +1,93 @@
+
+
+body{
+  background-color: black;
+}
+#app {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.n{
+  height: 75px;
+  width: 50px;
+
+}
+.marker {
+  position: absolute;
+  width: 60px;
+  left: 172px;
+  top: -20px;
+  z-index: 2;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.blur {
+  animation: blur 10s;
+}
+.rainbow{
+  animation: coolor 10s;
+}
+@keyframes coolor{
+
+  0%{
+    background-color:#FFFFFF ;
+  }
+  10%{
+    background-color:#E7C9DE ;
+  }
+  25%{
+    background-color:rgb(187, 95, 158) ;
+  }
+  40%{
+    background-color:#852E6A ;
+  }
+  60%{
+    background-color:#3A507E;
+  }
+  80%{
+    background-color:#4888A0  ;
+  }
+  90%{
+    background-color:#CBCBCB ;
+  }
+
+
+
+}
+
+
+
+
+@keyframes blur {
+  0% {
+    filter: blur(0.5px);
+  }
+  50%{
+    filter: blur(2px);
+  }
+  80% {
+    filter: blur(1.5px);
+  }
+  95% {
+    filter: blur(0px);
+    
+  }
+}
